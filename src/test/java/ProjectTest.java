@@ -1,16 +1,8 @@
-import com.aventstack.extentreports.ExtentTest;
-import com.aventstack.extentreports.MediaEntityBuilder;
 import com.aventstack.extentreports.Status;
-import org.apache.commons.io.FileUtils;
 import org.junit.Assert;
 import org.junit.FixMethodOrder;
 import org.junit.Test;
 import org.junit.runners.MethodSorters;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
-import org.openqa.selenium.WebDriver;
-
-import java.io.File;
 import java.io.IOException;
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
@@ -19,7 +11,6 @@ public class ProjectTest extends ProjectTestBase {
     private final String GATECHUB_URL = "http://qatechhub.com";
     private final String FACEBOOK_URL = "http://facebook.com";
     private final String EXPECTED_TITLE = "QA Automation Tools Trainings and Tutorials | QA Tech Hub";
-    private final String SCREEN_SHOT_PATH = "/Users/igor_shved/Desktop/shots/";
 
     @Test
     public void test_1_openGatechubLandingPage() throws IOException {
