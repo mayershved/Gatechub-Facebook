@@ -27,7 +27,7 @@ public class CommonMethods {
     }
 
     public void setExtentReports(){
-        ExtentHtmlReporter htmlReporter = new ExtentHtmlReporter("/Users/igor_shved/Desktop/gatechub_facebook_report.html");
+        ExtentHtmlReporter htmlReporter = new ExtentHtmlReporter("/Users/igor_shved/Desktop/reports/gatechub_facebook_report.html");
         extentReports = new ExtentReports();
         extentReports.attachReporter(htmlReporter);
         extentReports.setSystemInfo("Environment", "Production");
