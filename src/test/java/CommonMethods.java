@@ -42,17 +42,17 @@ public class CommonMethods {
         return extentReports;
     }
 
-    public String takeScreenShot(String pahtToScreenShot, WebDriver driver) {
+    public String takeScreenShot(String pathToScreenShot, WebDriver driver) {
         TakesScreenshot takesScreenshot = (TakesScreenshot) driver;
         File screenShotFile = takesScreenshot.getScreenshotAs(OutputType.FILE);
-        File destinationFile = new File(pahtToScreenShot+".png");
+        File destinationFile = new File(pathToScreenShot+".png");
         try {
             FileUtils.copyFile(screenShotFile, destinationFile);
         } catch (
                 IOException e) {
             System.out.println(e.getMessage());
         }
-        return pahtToScreenShot+".png";
+        return pathToScreenShot +".png";
     }
 
     public void addScreenShotToExtentTest(String details, ExtentTest extentTest, WebDriver driver) throws IOException {

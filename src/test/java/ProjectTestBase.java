@@ -26,7 +26,9 @@ public class ProjectTestBase {
         commonMethods.setExtentReports();
         extentReports = commonMethods.getExtentReports();
         // ExtentTest
-        extentTest = extentReports.createTest("gatechub_facebook_report","gatechub_facebook assignment");
+        extentTest = extentReports.createTest("Gatechub-Facebook","open, navigate, refresh");
+
+
     }
 
     @After
